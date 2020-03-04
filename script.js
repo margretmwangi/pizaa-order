@@ -1,5 +1,5 @@
 function Order(crust,size,sauce,topping){
-    this.type = crust;
+    this.type =crust;
     this.size = size;
     this.crust = sauce;
     this.topping = topping;
