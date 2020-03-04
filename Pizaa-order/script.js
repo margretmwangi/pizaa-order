@@ -4,7 +4,7 @@ function Order(crust,size,sauce,topping){
     this.crust = sauce;
     this.topping = topping;
     };
-    Results.prototype.order = function() {
+    Order.prototype.order = function() {
         return "You have made an order of " + this.type + " pizza  with " + this.toppings + " as toppings and " + this.crust + " for crust ."
     };
     function TotalPrice (price, quantity, delivery,toppings,crust) {
