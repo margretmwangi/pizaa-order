@@ -64,6 +64,6 @@ function validateForm() {
       );
     }
     event.preventDefault();
-  }
+  };
     
     
