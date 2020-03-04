@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/css/bootstrap. min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src='js/main.js'></script>
+    <title>Pizaa-order</title>
+</head>
+<body>
+    <div id="order">
+    <h1>PLACE YOUR ORDER HERE</h1>
+    <div class="book">
+    </div>
+    <!-- CRUST  -->
+    <div class="form-group">
+        <label for="sel1">Select crust:</label>
+        <select class="form-control" id="crusting">
+            <option value="1">Cripsy-200</option>
+            <option value="2">Stuffed-220</option>
+            <option value="3">Glutten-free-300</option>
+        </select>
+           <!-- SIZE -->
+           <h1>What's your preferrable size</h1>
+           <div class="order-item customize">
+            <label for="sizes">Size</label>
+            <select name=" sizes" id="sizes">
+                <option value="1">Large-650</option>
+                <option value="2">Medium-800</option>
+                <option value="3">Small-1600</option>
+            </select>
+        </div>
+         <!-- SAUCE -->
+         <h1>Select the sauce of your choice</h1>
+         <div class="order-item customize">
+            <label for="sauce" class="text-danger">Sauce</label>
+            <select name="sauce" id="sauce">
+                <option value="1">Large-1200</option>
+                <option value="2">Medium-800</option>
+                <option value="3">Small-600</option>
+            </select>
+        </div>
+        <!-- TOPPINGS -->
+        <div class="form-group">
+            <label for="sel1">Select topping:</label>
+            <select class="form-control" id="top">
+                <option value="1">Pepperoni-180</option> 180,200,210,250,300
+                <option value="2">Mushrooms-200</option>
+                <option value="3">Sausage-250</option>
+                <option value="4">Bacon-300</option>
+            </select>
+        </div>
+        <div class="form-group" required>
+            <label for="sel1">Quantity:</label>
+            <input type="number" id="quantity" class="form-control" min="1" required>
+        </diV>
+</div>
+<div class="form-group" required="">
+    <label for="deliver">Delivery option:</label>
+    <select class="form-control" id="delivery">
+        <option value="1">No Delivery</option>
+        <option value="2">Delivery</option>
+    </select>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info btn-block" onclick="submit()">make an order</button>
+    </div>
+</body>
+</html>
