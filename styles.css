@@ -2,9 +2,48 @@
 
 
     body{
-    background-image: url(./image/vegetables-italian-pizza.jpg);
+    background-color: wheat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    overflow-x: hidden;
 }
+.book img{
+    float:left;
+    width:75vh;;
+    height:75vh;
+  }
+ input[type=text], select {
+    width: 100%;
+    
+    
+  }
+    
+  input[type=submit] {
+   width:100%;
+  } 
+#menu h1{
+    margin-left: 80px;
+    color: rgb(250, 8, 8);
+  }
+  #menu h1{
+    margin-left: 80px;
+    color: rgb(250, 8, 8);
+  }
+  #contact{
+    background-color: rgba(0, 0, 0, 0.884) ;
+    margin:50px;
+    color: white;
+    
+  }
+  h1{
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+  h2{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

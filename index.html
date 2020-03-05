@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizaa-order</title>
-    <link  rel="stylesheet" href="css/css/bootstrap. min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheeet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</head>
+    <title>Pizaa-order</title>
+   <head>
 <body>
-    <div class="land">
-        <div id="home">
-          <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a href="#order">Order</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>  
+    
+        <div class="row">
+            <div class="col-md-3">
+              <div id="about">
+                  <div class="story">
+                    <h1>Order-Pizaa Inn</h1>
+                    <p> The homemade pizza dough is produced in-house daily and is another reason why the pizza at<br> Pizza Inn always tastes better. The Twisty Bread, <br>the signature Wingz and the delicious Double Meal are additional<br> value-for-money options that keep our satis?ed customers <br>coming back time after time. These are the meals that have made our Terri<br> Tuesday everyone’s favourite day of the week. When entertaining, <br>a Hawaiian, a Regina, or a Peri Peri Chicken pizza from Pizza Inn is the obvious<br> and perfect option to please crowds of all ages.<br></p>
+                </div> 
         <div id="menu">
             <h2>Our Menu</h2>
             <div class="container">
                 <div class="row">
                   <div class="col-md-3">
-                      <h1>Deluxe</h1>
+                      <h2>Deluxe</h2>
                       <img src="./Pizaa-order/image/deluxe-feast-pizza-medium.jpg"  class="img-fluid " alt=" samle image">
                       
                         <div class="text">
@@ -37,77 +37,82 @@
                   
                   <div class="col-md-3">
                     
-                      <h1>Margherita</h1>
-                      <img src="Pizaa-order/image/Margherita-Flatbread-16.jpg "  class ="img-fluid"  alt="sample image">
+                      <h2>Margherita</h2>
+                      <img src="Pizaa-order/image/Margherita-Flatbread-16.jpg "  class ="img-fluid"  alt="sample image" width="550" height="400">
                       
                         <div class="text">
                           <p><strong>Ksh: 750</strong></p>
                       </div>
                     
                   <div class="col-md-3">
-                      <h1>Pepperoni</h1>
-                      <img src="Pizaa-order/image/pepperonipizza.jpg" class="img-fluid " alt="sample image">
+                      <h2>Pepperoni</h2>
+                      <img src="Pizaa-order/image/pepperonipizza.jpg" class="img-fluid " alt="sample image" width="550" height="400">
                       
                         <div class="text">
                           <p><strong>Ksh: 650</strong></p>
                         </div>
                     </div>
-                <div class="row">
-                  <div class="col-md-3">
-    <h1>PLACE YOUR ORDER HERE</h1>
+                
+    <h2>PLACE YOUR ORDER HERE</h2>
     <div class="book">
     </div>
     <!-- CRUST  -->
     <div class="form-group">
         <label for="sel1">Select crust:</label>
         <select class="form-control" id="crusting">
-            <option value="1">Cripsy-200</option>
-            <option value="2">Stuffed-220</option>
-            <option value="3">Glutten-free-300</option>
+            <option value="200">Cripsy-200</option>
+            <option value="220">Stuffed-220</option>
+            <option value="300">Glutten-free-300</option>
         </select>
            <!-- SIZE -->
-           <h1>What's your preferrable size</h1>
+           <h2>What's your preferrable size</h2>
            <div class="order-item customize">
             <label for="sizes">Size</label>
             <select name=" sizes" id="sizes">
-                <option value="1">Large-650</option>
-                <option value="2">Medium-800</option>
-                <option value="3">Small-1600</option>
+                <option value="650">Large-650</option>
+                <option value="800">Medium-800</option>
+                <option value="1600">Small-1600</option>
             </select>
         </div>
          <!-- SAUCE -->
-         <h1>Select the sauce of your choice</h1>
+         <h2>Select the sauce of your choice</h2>
          <div class="order-item customize">
             <label for="sauce" class="text-danger">Sauce</label>
             <select name="sauce" id="sauce">
-                <option value="1">Large-1200</option>
-                <option value="2">Medium-800</option>
-                <option value="3">Small-600</option>
+                <option value="1200">Large-1200</option>
+                <option value="800">Medium-800</option>
+                <option value="600">Small-600</option>
             </select>
         </div>
         <!-- TOPPINGS -->
         <div class="form-group">
             <label for="sel1">Select topping:</label>
             <select class="form-control" id="top">
-                <option value="1">Pepperoni-180</option> 180,200,210,250,300
-                <option value="2">Mushrooms-200</option>
-                <option value="3">Sausage-250</option>
-                <option value="4">Bacon-300</option>
+                <option value="180">Pepperoni-180</option> 180,200,210,250,300
+                <option value="200">Mushrooms-200</option>
+                <option value="250">Sausage-250</option>
+                <option value="300">Bacon-300</option>
             </select>
         </div>
         <div class="form-group" required>
             <label for="sel1">Quantity:</label>
-            <input type="number" id="quantity" class="form-control" min="1" required>
+            <select class="form-control" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <!-- <input type="number" value="" id="quantity" class="form-control" min="1" required> -->
         </diV>
 </div>
 <div class="form-group" required="">
     <label for="deliver">Delivery option:</label>
     <select class="form-control" id="delivery">
-        <option value="1">No Delivery</option>
-        <option value="2">Delivery</option>
+        <option value="0">No Delivery</option>
+        <option value="200">Delivery</option>
     </select>
     <div class="form-group">
-        <button type="submit" class="btn btn-info btn-block" onclick="submit()">make an order</button>
+        <button type="submit" id="submit" class="btn btn-info btn-block">make an order</button>
     </div>
     <!--Contacts-->
     <div class="container-fluid pl-0 pr-0">
@@ -133,6 +138,7 @@
                 </div>
             </form>
             <p style="text-align:center;">Pizza-order &copy; 2020</p>
-        </di>
+        </div>
+        <script src="/Pizaa-order/script.js"></script>
 </body>
 </html>
